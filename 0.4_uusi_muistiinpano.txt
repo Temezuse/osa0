@@ -1,0 +1,31 @@
+
+Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+note right of Palvelin: 
+Palvelin saa tallennettavan merkkijonon
+ja tallentaa sen
+end note
+Palvelin-->Selain: Uudelleenohjauspyyntö
+
+Selain->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+Palvelin-->Selain: Sivun HTML-koodi
+note left of Selain: 
+Selain saa päivitetyn
+sivun sisällön ja rakenteen
+end note
+
+Selain->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Palvelin-->Selain: main.css
+note left of Selain: 
+HTML-koodi haki tyylit 
+määrittävän main.css tiedoston
+end note
+
+Selain->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+Palvelin-->Selain: main.js
+
+Selain->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+Palvelin-->Selain: data.json
+note left of Selain: 
+data.json sisältää 
+listan muistiinpanoista
+end note

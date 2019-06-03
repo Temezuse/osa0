@@ -1,0 +1,7 @@
+
+Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note right of Palvelin: 
+Muistiinpano tallentuu
+palvelimelle
+end note
+Palvelin-->Selain: Vahvistus että palvelin sai muistiinpanon
